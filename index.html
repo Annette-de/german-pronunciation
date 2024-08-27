@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учимся немецкому произношению</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Главная страница</a></li>
+                <li><a href="#lessons">Уроки</a></li>
+                <li><a href="#articulation">Артикуляция</a></li>
+                <li><a href="#exercises">Упражнения</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <div class="welcome">
+            <h1>Привет, меня зовут Фионова Анна Игоревна</h1>
+            <p>Наш сайт — отличный помощник на пути к правильному немецкому произношению.</p>
+        </div>
+    </section>
+
+    <section id="lessons">
+        <h2>Уроки</h2>
+        <p>Здесь будут видео или аудиоматериалы с артикуляцией и произношением.</p>
+    </section>
+
+    <section id="articulation">
+        <h2>Артикуляция звуков</h2>
+        <p>Здесь будет описание артикуляции каждого звука с примерами.</p>
+    </section>
+
+    <section id="exercises">
+        <h2>Упражнения для самостоятельной отработки</h2>
+        <p>Выберите правильное произношение для слова "Haus":</p>
+        <button onclick="checkAnswer('a')">A: /haʊs/</button>
+        <button onclick="checkAnswer('b')">B: /haʊz/</button>
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Учимся немецкому произношению. Разработано Фионовой Анной Игоревной</p>
+    </footer>
+
+    <script>
+        function checkAnswer(choice) {
+            if (choice === 'a') {
+                document.getElementById('result').innerText = 'Правильно!';
+            } else {
+                document.getElementById('result').innerText = 'Попробуйте еще раз.';
+            }
+        }
+    </script>
+</body>
+</html>
